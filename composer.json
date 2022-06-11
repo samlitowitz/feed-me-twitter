@@ -1,0 +1,33 @@
+{
+    "name": "samlitowitz/feed-me-twitter-php-openapi",
+    "description": "Implement Feed-Me interfaces for the Twitter PHP OpenAPI.",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Sam Litowitz",
+            "email": "samlitowitz@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "platform": {
+        "php": "7.4.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "FeedMeTwitterOpenAPI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FeedMeTwitterOpenAPI\\": ["src/", "tests/FeedMeTwitterOpenAPI/"]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.0.0"
+    },
+    "require": {
+        "samlitowitz/feed-me": "^0.0.1",
+        "samlitowitz/twitter-php-openapi": "2.0"
+    }
+}

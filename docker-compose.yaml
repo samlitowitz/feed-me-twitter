@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+    php:
+        image: mobtitude/php-xdebug:8.0-cli
+        entrypoint: [ "/usr/local/bin/php" ]
+        ports:
+            - "9000:9000"
+        secrets:
+            - api_key
+            - api_secret
+            - bearer_token
+        volumes:
+            - ./:/app
+            - ./docker/php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+
+secrets:
+    api_key:
+        file: ./docker/php/secrets/api_key
+    api_secret:
+        file: ./docker/php/secrets/api_secret
+    bearer_token:
+        file: ./docker/php/secrets/bearer_token
