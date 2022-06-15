@@ -3,6 +3,7 @@
 namespace FeedMeTwitterOpenAPI\Media;
 
 use FeedMe\Media;
+use Streamable\Stream;
 
 final class Video extends \OpenAPI\Client\Model\Video implements Media {
 	public static function fromVideo(\OpenAPI\Client\Model\Video $video): self
@@ -10,7 +11,7 @@ final class Video extends \OpenAPI\Client\Model\Video implements Media {
 		return new self($video->jsonSerialize());
 	}
 
-	public function getBinaryData(): string
+	public function getBinaryData(): Stream
 	{
 		// TODO: Implement getBinaryData() method.
 	}

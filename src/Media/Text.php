@@ -3,6 +3,8 @@
 namespace FeedMeTwitterOpenAPI\Media;
 
 use FeedMe\Media;
+use Streamable\Stream;
+use Streamable\String_;
 
 final class Text implements Media {
 	/** @var ?string */
@@ -13,9 +15,9 @@ final class Text implements Media {
 		$this->setText($text);
 	}
 
-	public function getBinaryData(): string
+	public function getBinaryData(): Stream
 	{
-		return $this->getText() ?: '';
+		return new String_($this->getText() ?: '');
 	}
 
 	public function getText(): ?string
