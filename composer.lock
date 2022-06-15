@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe7f7fc0501dde50bb3db38e61b0f916",
+    "content-hash": "6ed83d8259603aa02a7a6a7683bf4c26",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -535,17 +535,20 @@
         },
         {
             "name": "samlitowitz/feed-me",
-            "version": "v0.0.1",
+            "version": "v0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/samlitowitz/feed-me.git",
-                "reference": "17bc731fd77e72033196ba97b65766ffdbb81058"
+                "reference": "fac82132d22fb40d9e70a3bc54bd35b3ff52ad62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/samlitowitz/feed-me/zipball/17bc731fd77e72033196ba97b65766ffdbb81058",
-                "reference": "17bc731fd77e72033196ba97b65766ffdbb81058",
+                "url": "https://api.github.com/repos/samlitowitz/feed-me/zipball/fac82132d22fb40d9e70a3bc54bd35b3ff52ad62",
+                "reference": "fac82132d22fb40d9e70a3bc54bd35b3ff52ad62",
                 "shasum": ""
+            },
+            "require": {
+                "samlitowitz/streamable": "1.0.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "9.0.0"
@@ -569,9 +572,49 @@
             "description": "Feed-Me provides a set of interfaces to talk about streams of content.",
             "support": {
                 "issues": "https://github.com/samlitowitz/feed-me/issues",
-                "source": "https://github.com/samlitowitz/feed-me/tree/v0.0.1"
+                "source": "https://github.com/samlitowitz/feed-me/tree/v0.0.2"
             },
-            "time": "2021-11-12T17:26:38+00:00"
+            "time": "2022-06-15T12:38:53+00:00"
+        },
+        {
+            "name": "samlitowitz/streamable",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/samlitowitz/streamable.git",
+                "reference": "36b2951db24968f5ab25991aadabc0ba00854a10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/samlitowitz/streamable/zipball/36b2951db24968f5ab25991aadabc0ba00854a10",
+                "reference": "36b2951db24968f5ab25991aadabc0ba00854a10",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "9.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Streamable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Litowitz",
+                    "email": "samlitowitz@users.noreply.github.com"
+                }
+            ],
+            "description": "Interfaces and implementations to create streams from data.",
+            "support": {
+                "issues": "https://github.com/samlitowitz/streamable/issues",
+                "source": "https://github.com/samlitowitz/streamable/tree/v1.0.0"
+            },
+            "time": "2022-06-15T12:34:07+00:00"
         },
         {
             "name": "samlitowitz/twitter-php-openapi",

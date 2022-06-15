@@ -27,7 +27,8 @@
         "phpunit/phpunit": "9.0.0"
     },
     "require": {
-        "samlitowitz/feed-me": "^0.0.1",
-        "samlitowitz/twitter-php-openapi": "2.0"
+        "samlitowitz/feed-me": "0.0.2",
+        "samlitowitz/twitter-php-openapi": "2.0",
+        "guzzlehttp/guzzle": "^7.4"
     }
 }
