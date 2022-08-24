@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ed83d8259603aa02a7a6a7683bf4c26",
+    "content-hash": "a597c9e8819744d32553c40ee7a9d8a5",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -535,28 +535,30 @@
         },
         {
             "name": "samlitowitz/feed-me",
-            "version": "v0.0.2",
+            "version": "v0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/samlitowitz/feed-me.git",
-                "reference": "fac82132d22fb40d9e70a3bc54bd35b3ff52ad62"
+                "reference": "a787aa4dee7b82b3080a4617b56d2293bf5505bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/samlitowitz/feed-me/zipball/fac82132d22fb40d9e70a3bc54bd35b3ff52ad62",
-                "reference": "fac82132d22fb40d9e70a3bc54bd35b3ff52ad62",
+                "url": "https://api.github.com/repos/samlitowitz/feed-me/zipball/a787aa4dee7b82b3080a4617b56d2293bf5505bb",
+                "reference": "a787aa4dee7b82b3080a4617b56d2293bf5505bb",
                 "shasum": ""
             },
             "require": {
-                "samlitowitz/streamable": "1.0.0"
+                "samlitowitz/streamable": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "9.0.0"
+                "phpunit/phpunit": "^9.5",
+                "samlitowitz/php-collection-generator": "^1.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "FeedMe\\": "src/"
+                    "FeedMe\\": "src/",
+                    "FeedMe\\Examples\\": "examples/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -572,9 +574,9 @@
             "description": "Feed-Me provides a set of interfaces to talk about streams of content.",
             "support": {
                 "issues": "https://github.com/samlitowitz/feed-me/issues",
-                "source": "https://github.com/samlitowitz/feed-me/tree/v0.0.2"
+                "source": "https://github.com/samlitowitz/feed-me/tree/v0.0.3"
             },
-            "time": "2022-06-15T12:38:53+00:00"
+            "time": "2022-08-21T18:01:23+00:00"
         },
         {
             "name": "samlitowitz/streamable",
@@ -2523,5 +2525,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }
