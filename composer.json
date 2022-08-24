@@ -20,7 +20,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "FeedMeTwitterOpenAPI\\": ["src/", "tests/FeedMeTwitterOpenAPI/"]
+            "FeedMeTwitterOpenAPI\\": "src/",
+            "FeedMeTwitterOpenAPI\\Tests\\": "tests/"
         }
     },
     "require-dev": {
