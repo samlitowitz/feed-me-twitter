@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a597c9e8819744d32553c40ee7a9d8a5",
+    "content-hash": "27d2bcdc202ab64e1571a0b88da1b79a",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -535,16 +535,16 @@
         },
         {
             "name": "samlitowitz/feed-me",
-            "version": "v0.0.3",
+            "version": "v0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/samlitowitz/feed-me.git",
-                "reference": "a787aa4dee7b82b3080a4617b56d2293bf5505bb"
+                "reference": "3863586dae2e5f2af600ebde425611a2358f890d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/samlitowitz/feed-me/zipball/a787aa4dee7b82b3080a4617b56d2293bf5505bb",
-                "reference": "a787aa4dee7b82b3080a4617b56d2293bf5505bb",
+                "url": "https://api.github.com/repos/samlitowitz/feed-me/zipball/3863586dae2e5f2af600ebde425611a2358f890d",
+                "reference": "3863586dae2e5f2af600ebde425611a2358f890d",
                 "shasum": ""
             },
             "require": {
@@ -574,9 +574,9 @@
             "description": "Feed-Me provides a set of interfaces to talk about streams of content.",
             "support": {
                 "issues": "https://github.com/samlitowitz/feed-me/issues",
-                "source": "https://github.com/samlitowitz/feed-me/tree/v0.0.3"
+                "source": "https://github.com/samlitowitz/feed-me/tree/v0.0.4"
             },
-            "time": "2022-08-21T18:01:23+00:00"
+            "time": "2022-08-25T15:06:20+00:00"
         },
         {
             "name": "samlitowitz/streamable",
