@@ -24,7 +24,12 @@ final class Tweet implements Content {
 		$obj = new self();
 		$collection = $obj->getMedia();
 
-		$collection->push(new Text($tweet->getText()));
+		$collection->add(new Text($tweet->getText()));
+
+		if ($includes === null) {
+			$obj->setMedia($collection);
+			return $obj;
+		}
 
 		$mediaByKey = [];
 		foreach ($includes->getMedia() as $media) {
@@ -46,7 +51,7 @@ final class Tweet implements Content {
 				if (!\array_key_exists($mediaKey, $mediaByKey)) {
 					continue;
 				}
-				$collection->push($mediaKey[$mediaKey]);
+				$collection->add($mediaKey[$mediaKey]);
 			}
 		}
 
