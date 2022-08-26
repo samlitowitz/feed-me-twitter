@@ -15,7 +15,7 @@ final class Text implements Media {
 		$this->setText($text);
 	}
 
-	public function getBinaryData(): Stream
+	public function getData(): Stream
 	{
 		return new String_($this->getText() ?: '');
 	}
