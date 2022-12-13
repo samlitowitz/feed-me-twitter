@@ -20,7 +20,7 @@ final class Photo extends \OpenAPI\Client\Model\Photo implements Media
 		return new self($photo->jsonSerialize());
 	}
 
-	public function getBinaryData(): Stream
+	public function getData(): Stream
 	{
 		if ($this->cachedBinaryData === null) {
 			$client = $this->getClient() ?? new Client();

@@ -11,7 +11,7 @@ final class Video extends \OpenAPI\Client\Model\Video implements Media {
 		return new self($video->jsonSerialize());
 	}
 
-	public function getBinaryData(): Stream
+	public function getData(): Stream
 	{
 		// TODO: Implement getBinaryData() method.
 	}
